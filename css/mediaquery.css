@@ -3,3 +3,8 @@
       font-size: 100%;
    }
 }
+@media(max-width:767px){
+   html{
+      font-size: 55%;
+   }
+}
