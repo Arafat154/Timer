@@ -7,6 +7,9 @@
    padding: 0;
    box-sizing: border-box;
 }
+html{
+   font-size: 62.5%;
+}
 body{
    width: 100%;
    height: 100vh;
@@ -16,14 +19,14 @@ body{
 #header{
    width: 100%;
    text-align: center;
-   font-size: 25px;
    position: absolute;
    top: 0;
    left: 0;
    font-family: 'Raleway', sans-serif;
 }
 #header h3{
-   margin-top: 25px;
+   margin-top: 2.5rem;
+   font-size: 2.5rem;
 }
 /*
 *
@@ -31,41 +34,41 @@ body{
 *
 */
 #icon-bar{
-   width: 55px;
+   width: 5.5rem;
    position: fixed;
    top: 50%;
    transform: translateY(-50%);
    z-index: 1000;
-   box-shadow: 5px 0 7px rgba(0, 0, 0, 0.2);
+   box-shadow: 0.5rem 0 0.7rem rgba(0, 0, 0, 0.2);
 }
 #icon-bar span{
-   width: 170px;
-   height: 80px;
+   width: 17rem;
+   height: 8rem;
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   transform: translateX(-115px);
+   transform: translateX(-11.5rem);
    transition: 0.5s;
-   padding: 15px;
+   padding: 1.5rem;
    opacity: 0.8;
 }
 #icon-bar span a{
-   font-size: 15px;
+   font-size: 1.5rem;
    text-decoration: none;
    color: #fff;
 }
 #icon-bar span i{
-   font-size: 25px;
-   padding-left: 20px;
+   font-size: 2.5rem;
+   padding-left: 2rem;
    color: #fff;
 }
 #icon-bar span img{
-   width: 50px;
-   padding-left: 20px;
+   width: 5rem;
+   padding-left: 2rem;
 }
 #icon-bar span:hover{
    transform: translateX(0);
-   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+   box-shadow: 0.5rem 0 1rem rgba(0, 0, 0, 0.2);
    opacity: 1;
 }
 #icon-bar .facebook{
@@ -85,50 +88,54 @@ body{
 *           card start (digital)
 *
 */
-#card-digit{
+#card-digital{
    width: 100%;
    height: 100vh;
    display: grid;
    place-items: center;
 }
-#card-digit .cardbody{
-   width: 350px;
-   height: 350px;
-   box-shadow: 4px 4px 25px rgba(0,0,0,0.5);
+#card-digital .cardbody{
+   width: 35rem;
+   height: 35rem;
+   box-shadow: 0.4rem 0.4rem 2.5rem rgba(0,0,0,0.5);
    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/b.jpg);
    background-size: cover;
    background-position: bottom;
-   border-radius: 10px;
+   border-radius: 1rem;
    display: flex;
    justify-content: center;
    align-items: center;
 }
-#card-digit .digital{
-   width: 287px;
+#card-digital .border{
+   border: 0.1rem solid #f7d794;
+}
+#card-digital .digital{
+   width: 28.9rem;
    height: auto;
    color: #f7d794;
    overflow: hidden;
+   padding: 1rem 0;
 }
-#card-digit .digit{
+#card-digital .digit{
    float: left;
-   border-right: 1px solid #F8EFBA;
+   border-right: 0.1rem solid #F8EFBA;
 }
-#card-digit .digit:nth-child(3){
+#card-digital .digit:nth-child(3){
    border-right: none;
 }
-#card-digit span{
-   width: 95px;
-   height: 50px;
+#card-digital span{
+   width: 9.5rem;
+   height: 5rem;
    display: block;
    display: grid;
    place-items: center;
-   font-size: 40px;
+   font-size: 3.5rem;
    font-family: 'Josefin Sans', sans-serif;
 }
-#card-digit span:nth-child(2){
+#card-digital span:nth-child(2){
    height: auto;
-   padding: 15px;
-   font-size: 15px;
+   padding: 1.5rem;
+   font-size: 1.5rem;
    font-family: 'Montserrat', sans-serif;
    font-weight: 600;
    color: #fff;
@@ -150,7 +157,7 @@ body{
    position: absolute;
    bottom: 0;
    left: 0;
-   padding: 20px 0 20px 0;
+   padding: 2rem 0 2rem 0;
    opacity: 0.6;
 }
 #footer span{
@@ -159,50 +166,50 @@ body{
 #footer span a{
    text-decoration: none;
    color: yellow;
-   font-size: 24px;
+   font-size: 2.4rem;
    font-family: 'Akaya Telivigala', cursive;
 }
 /*
 *
+*           footer end
+*
+*
 *           card start (analog)
 *
-*
-*           footer start
-*
 */
-#card-ana{
+#card-analog{
    width: 100%;
    height: 100vh;
    display: grid;
    place-items: center;
 }
-#card-ana .cardbody{
-   width: 350px;
-   height: 350px;
+#card-analog .cardbody{
+   width: 35rem;
+   height: 35rem;
    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/c.jpg);
    background-size: cover;
    background-position: bottom;
-   border-radius: 10px;
+   border-radius: 1rem;
    display: flex;
    justify-content: center;
    align-items: center;
+   box-shadow: 0.4rem 0.4rem 2.5rem rgba(0,0,0,0.5);
 }
-#card-ana .inside{
+#card-analog .inside{
    width: 100%;
    height: 100%;
    background: url(../img/clock.png);
    background-size: cover;
 }
-#card-ana .clock{
-   width: 230px;
-   height: 230px;
+#card-analog .clock{
+   width: 23rem;
+   height: 23rem;
    position: relative;
    border-radius: 50%;
-   /*border: 1px solid #f7d794;*/
 }
-#card-ana .dot{
-   width: 20px;
-   height: 20px;
+#card-analog .dot{
+   width: 2rem;
+   height: 2rem;
    background: orange;
    border-radius: 50%;
    position: absolute;
@@ -210,7 +217,7 @@ body{
    left: 50%;
    transform: translate(-50%, -50%);
 }
-#card-ana .clock .hand {
+#card-analog .clock .hand {
   --rotation: 0;
   position: absolute;
   bottom: 50%;
@@ -218,21 +225,62 @@ body{
   transform-origin: bottom;
   transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));/*core of analog clock*/                   
 }
-#card-ana .clock .hand.second {
-  width: 2px;
-  height: 100px;
+#card-analog .clock .hand.second {
+  width: 0.2rem;
+  height: 10rem;
   background-color: red;
-  border-radius: 1px;
+  border-radius: 0.1rem;
 }
-#card-ana .clock .hand.minute {
-  width: 4px;
-  height: 85px;
+#card-analog .clock .hand.minute {
+  width: 0.4rem;
+  height: 8.5rem;
   background-color: #2ba5ee;
-  border-radius: 2px;
+  border-radius: 0.2rem;
 }
-#card-ana .clock .hand.hour {
-  width: 8px;
-  height: 50px;
+#card-analog .clock .hand.hour {
+  width: 0.8rem;
+  height: 5rem;
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 0.4rem;
+}
+/*
+*
+*           card end (analog)
+*
+*
+*           card start (date)
+*
+*/
+#card-date{
+   width: 100%;
+   height: 100vh;
+   display: grid;
+   place-items: center;
+}
+#card-date .cardbody{
+   width: 35rem;
+   height: 35rem;
+   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/a.jpg);
+   background-size: cover;
+   background-position: bottom;
+   border-radius: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0.4rem 0.4rem 2.5rem rgba(0,0,0,0.5);
+}
+#card-date .border{
+   border: 0.1rem solid #f7d794;
+   padding: 2rem 2.5rem;
+}
+#card-date .date {
+   display: inline-block;
+   margin-right: 2rem;
+   color: #f7d794;
+   text-align: center;
+   font-size: 2.5rem;
+   font-family: 'Montserrat', sans-serif;
+}
+#card-date .year{
+   margin-right: 0;
 }
