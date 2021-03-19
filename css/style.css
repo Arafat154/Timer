@@ -23,7 +23,7 @@ body{
    background: #fff;
    background-image: url(../img/Preloader.gif);
    background-repeat: no-repeat;
-   background-size: 40rem;
+   background-size: 34rem;
    background-position: center center;
    z-index: 99999;
 }
